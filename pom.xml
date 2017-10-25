@@ -72,13 +72,13 @@
 
         <dependency>
             <groupId>de.monticore.lang</groupId>
-            <artifactId>SIUnit</artifactId>
+            <artifactId>NumberUnit</artifactId>
             <version>${SIUnit.version}</version>
         </dependency>
 
         <dependency>
             <groupId>de.monticore.lang</groupId>
-            <artifactId>SIUnit</artifactId>
+            <artifactId>NumberUnit</artifactId>
             <version>${SIUnit.version}</version>
             <classifier>${grammars.classifier}</classifier>
             <scope>provided</scope>
