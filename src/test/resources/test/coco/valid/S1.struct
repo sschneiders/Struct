@@ -3,5 +3,4 @@ package test.coco.valid;
 struct S1 {
   Z f1;
   Q f2;
-  B[][][] f3;
 }

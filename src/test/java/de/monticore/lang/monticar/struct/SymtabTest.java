@@ -78,9 +78,7 @@ public class SymtabTest {
         Assert.assertTrue(ScalarStructFieldType.INTEGRAL.equals(f8.getTypeInfo()));
         Assert.assertTrue(ScalarStructFieldType.INTEGRAL.equals(f9.getTypeInfo()));
         Assert.assertTrue(ScalarStructFieldType.BOOL.equals(f10.getTypeInfo()));
-        VectorStructFieldType f11Type = (VectorStructFieldType) f11.getTypeInfo();
-        Assert.assertEquals(1, f11Type.getDimensionality());
-        Assert.assertTrue(ScalarStructFieldType.INTEGRAL.equals(f11Type.getTypeOfElements()));
+        Assert.assertTrue(ScalarStructFieldType.COMPLEX.equals(f11.getTypeInfo()));
         VectorStructFieldType f12Type = (VectorStructFieldType) f12.getTypeInfo();
         Assert.assertEquals(1, f12Type.getDimensionality());
         Assert.assertEquals(
@@ -105,9 +103,7 @@ public class SymtabTest {
                 "test.symtable.sub2.T5",
                 ((StructReferenceFieldType) f15Type.getTypeOfElements()).getReference().getReferencedSymbol().getFullName()
         );
-        VectorStructFieldType f16Type = (VectorStructFieldType) f16.getTypeInfo();
-        Assert.assertEquals(15, f16Type.getDimensionality());
-        Assert.assertTrue(ScalarStructFieldType.RATIONAL.equals(f16Type.getTypeOfElements()));
+        Assert.assertTrue(ScalarStructFieldType.INTEGRAL.equals(f16.getTypeInfo()));
         VectorStructFieldType f17Type = (VectorStructFieldType) f17.getTypeInfo();
         Assert.assertEquals(10, f17Type.getDimensionality());
         Assert.assertEquals(

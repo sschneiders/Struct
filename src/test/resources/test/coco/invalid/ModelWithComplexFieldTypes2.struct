@@ -2,6 +2,5 @@ package test.coco.invalid;
 
 struct ModelWithComplexFieldTypes2 {
   B f1;
-  Q[][] f2;
   foo.bar.Baz<Foo1>.InnerStruct1<Foo2>.InnerStruct2<Foo3>[][][][] f3;
 }

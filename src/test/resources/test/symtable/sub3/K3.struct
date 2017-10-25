@@ -3,5 +3,4 @@ package test.symtable.sub3;
 struct K3 {
   Z f1;
   Z f2;
-  Z[][][][][] f3;
 }

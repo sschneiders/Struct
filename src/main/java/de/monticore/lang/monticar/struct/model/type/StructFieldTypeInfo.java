@@ -3,7 +3,6 @@ package de.monticore.lang.monticar.struct.model.type;
 import de.monticore.lang.monticar.struct._symboltable.StructSymbolReference;
 import de.monticore.lang.monticar.types2._ast.ASTComplexArrayType;
 import de.monticore.lang.monticar.types2._ast.ASTComplexReferenceType;
-import de.monticore.lang.monticar.types2._ast.ASTElementArrayType;
 import de.monticore.lang.monticar.types2._ast.ASTElementType;
 import de.monticore.lang.monticar.types2._ast.ASTPrimitiveArrayType;
 import de.monticore.lang.monticar.types2._ast.ASTPrimitiveType;
@@ -40,8 +39,6 @@ public interface StructFieldTypeInfo {
             return tryRepresentASTPrimitiveArrayType((ASTPrimitiveArrayType) node);
         } else if (node instanceof ASTComplexArrayType) {
             return tryRepresentASTComplexArrayType((ASTComplexArrayType) node, enclosingScope);
-        } else if (node instanceof ASTElementArrayType) {
-            return tryRepresentASTElementArrayType((ASTElementArrayType) node);
         }
         return null;
     }
@@ -107,13 +104,6 @@ public interface StructFieldTypeInfo {
         StructReferenceFieldType typeOfElements = tryRepresentASTSimpleReferenceType(
                 simpleReferenceTypes.get(0),
                 enclosingScope
-        );
-        return VectorStructFieldType.of(typeOfElements, type.getDimensions());
-    }
-
-    static VectorStructFieldType tryRepresentASTElementArrayType(ASTElementArrayType type) {
-        ScalarStructFieldType typeOfElements = tryRepresentASTElementType(
-                (ASTElementType) type.getComponentType()
         );
         return VectorStructFieldType.of(typeOfElements, type.getDimensions());
     }

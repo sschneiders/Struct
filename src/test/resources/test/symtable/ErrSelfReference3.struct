@@ -6,7 +6,6 @@ import test.symtable.sub1.S3;
 import test.symtable.sub2.*;
 
 struct ErrSelfReference3 {
-  B[] f1;
   Z f2;
   S1[] f3;
   S2 f4;

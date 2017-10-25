@@ -6,7 +6,6 @@ import test.symtable.sub2.*;
 
 struct ErrAmbiguousReference2 {
   B f1;
-  Z[][] f2;
   S1 f3;
   S2 f4;
   T1 f5;

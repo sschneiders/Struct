@@ -2,6 +2,5 @@ package test.symtable;
 
 struct ErrAmbiguouslyReferencedStruct1 {
   B f1;
-  Q[][] f2;
   MyFancyStruct1 f3;
 }

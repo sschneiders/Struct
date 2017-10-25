@@ -6,7 +6,6 @@ import test.symtable.sub3.*;
 
 struct ErrCycle1 {
   B f1;
-  Q[] f2;
   S1 f3;
   S2[][] f4;
   T1 f5;
