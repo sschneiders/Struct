@@ -1,0 +1,7 @@
+package test.coco.invalid;
+
+struct ModelWithPrimitiveTypes1 {
+  Q f1;
+  Z(0 : oo) f2;
+  int f3;
+}

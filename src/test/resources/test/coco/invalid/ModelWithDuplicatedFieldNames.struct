@@ -1,0 +1,8 @@
+package test.coco.invalid;
+
+struct ModelWithDuplicatedFieldNames {
+  B f1;
+  Q[][] f2;
+  foo.bar.T1[] f3;
+  Ololololo f1;
+}

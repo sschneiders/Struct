@@ -1,0 +1,9 @@
+package test.coco.valid;
+
+struct J1 {
+  Z f1;
+  Z[][] f2;
+  test.coco.valid.K1[][][] f3;
+  Z (0:oo) [][] f4;
+  Z (0:100:oo) [][] f5;
+}

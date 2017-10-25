@@ -1,0 +1,6 @@
+package test.parser;
+
+struct Point {
+  Q x;
+  Q y;
+}

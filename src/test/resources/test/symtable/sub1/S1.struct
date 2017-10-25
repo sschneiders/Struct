@@ -1,0 +1,7 @@
+package test.symtable.sub1;
+
+struct S1 {
+  B f1;
+  Q f2;
+  S2 f3;
+}

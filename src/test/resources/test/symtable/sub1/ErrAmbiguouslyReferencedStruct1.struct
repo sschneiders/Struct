@@ -1,0 +1,9 @@
+package test.symtable.sub1;
+
+struct ErrAmbiguouslyReferencedStruct1 {
+  B f1;
+  Q[] f2;
+  S1 f3;
+  S2[][] f4;
+  S3 f5;
+}

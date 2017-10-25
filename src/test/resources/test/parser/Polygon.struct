@@ -1,0 +1,5 @@
+package test.parser;
+
+struct Polygon {
+  Point[] points;
+}

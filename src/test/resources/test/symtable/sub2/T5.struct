@@ -1,0 +1,7 @@
+package test.symtable.sub2;
+
+struct T5 {
+  Z f1;
+  Q f2;
+  Z (-10m : 1cm : 10m) f3;
+}

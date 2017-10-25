@@ -1,0 +1,7 @@
+package test.coco.invalid;
+
+struct ModelWithGenerics1 {
+  Z f1;
+  Q f2;
+  foo.bar.Baz<SomeGeneric> f3;
+}
