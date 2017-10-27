@@ -262,16 +262,13 @@
 
     <distributionManagement>
         <repository>
-            <id>se-nexus</id>
-            <url>http://nexus.se.rwth-aachen.de/content/repositories/monticore-releases/</url>
+            <id>internal.repo</id>
+            <name>Temporary Staging Repository</name>
+            <url>file://${project.build.directory}/external-dependencies</url>
         </repository>
         <snapshotRepository>
-            <id>se-nexus</id>
-            <url>http://nexus.se.rwth-aachen.de/content/repositories/monticore-snapshots/</url>
+            <id>internal.repo</id>
+            <url>file://${project.build.directory}/external-dependencies</url>
         </snapshotRepository>
-        <site>
-            <id>se-nexus</id>
-            <url>dav:http://nexus.se.rwth-aachen.de/content/sites/se-sites/montiarc/4.0.1-SNAPSHOT/</url>
-        </site>
     </distributionManagement>
 </project>
